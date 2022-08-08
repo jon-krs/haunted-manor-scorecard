@@ -9,11 +9,12 @@ img {
 
 body {
     background-color: black;
+    background-image: url(./images/haunted-manor-background.jpeg);
 }
 
 .content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
@@ -21,17 +22,8 @@ body {
     gap: 1px;
     font-family: "Andale Mono", 'Courier New', Courier, monospace;
     text-transform: uppercase;
-}
-
-.grid-item {
-    border: 1px solid white;
-    text-align: left;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 75ch;
-    padding: 2px;
     color: #fff;
+    text-align: center;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -43,7 +35,17 @@ body {
         0 0 151px #0fa;
 }
 
-.neonText {
+.grid-item {
+    border: 1px solid white;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 75ch;
+    padding: 5px;
+}
+
+.neon-text {
     animation: flicker 1.5s infinite alternate;
     color: #fff;
   }
@@ -63,4 +65,84 @@ body {
     20%, 24%, 55% {       
       text-shadow: none;
     }
+  }
+
+  .hole-one {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  .hole-two {
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+
+  .hole-three {
+    grid-row-start: 4;
+    grid-column-start: 1;
+  }
+
+  .hole-four {
+    grid-row-start: 5;
+    grid-column-start: 1;
+  }
+
+  .hole-five {
+    grid-row-start: 6;
+    grid-column-start: 1;
+  }
+
+  .hole-six {
+    grid-row-start: 7;
+    grid-column-start: 1;
+  }
+
+  .hole-seven {
+    grid-row-start: 8;
+    grid-column-start: 1;
+  }
+
+  .hole-eight {
+    grid-row-start: 9;
+    grid-column-start: 1;
+  }
+
+  .hole-nine {
+    grid-row-start: 10;
+    grid-column-start: 1;
+  }
+
+  .hole-ten {
+    grid-row-start: 11;
+    grid-column-start: 1;
+  }
+
+  .hole-eleven {
+    grid-row-start: 12;
+    grid-column-start: 1;
+  }
+
+  .hole-twelve {
+    grid-row-start: 13;
+    grid-column-start: 1;
+  }
+
+  .hole-thirteen {
+    grid-row-start: 14;
+    grid-column-start: 1;
+  }
+
+  .hole-fourteen {
+    grid-row-start: 15;
+    grid-column-start: 1;
+  }
+
+  .hole-fifteen {
+    grid-row-start: 16;
+    grid-column-start: 1;
+  }
+
+  .total {
+    grid-row-start: 17;
+    grid-column-start: 1;
   }
