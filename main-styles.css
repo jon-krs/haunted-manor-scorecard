@@ -10,6 +10,7 @@ img {
 body {
     background-color: black;
     background-image: url(./images/haunted-manor-background.jpeg);
+    background-size: contain;
 }
 
 .content {
