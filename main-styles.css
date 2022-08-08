@@ -21,10 +21,13 @@ body {
     height: 100%;
     overflow: scroll;
     gap: 1px;
+    row-gap: 10px;
     font-family: "Andale Mono", 'Courier New', Courier, monospace;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
+    font-size: 12px;
+    padding: 5px;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -37,8 +40,6 @@ body {
 }
 
 .grid-item {
-    border: 1px solid white;
-    text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -146,4 +147,9 @@ body {
   .total {
     grid-row-start: 17;
     grid-column-start: 1;
+  }
+
+  .hole-num {
+    padding: 5px;   
+    align-self: center;
   }
