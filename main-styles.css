@@ -19,15 +19,13 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
+    row-gap: 5px;
     overflow: scroll;
-    gap: 1px;
-    row-gap: 10px;
     font-family: "Andale Mono", 'Courier New', Courier, monospace;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
     font-size: 12px;
-    padding: 5px;
     text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
@@ -36,21 +34,22 @@ body {
         0 0 82px #0fa,
         0 0 92px #0fa,
         0 0 102px #0fa,
-        0 0 151px #0fa;
+        0 0 151px #0fa; 
 }
 
 .grid-item {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    max-width: 75ch;
-    padding: 5px;
+    max-width: 15ch;
+    padding: 10px;
 }
 
 .neon-text {
     animation: flicker 1.5s infinite alternate;
     color: #fff;
-  }
+    padding: 10px;
+}
 
 @keyframes flicker {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -67,89 +66,104 @@ body {
     20%, 24%, 55% {       
       text-shadow: none;
     }
-  }
+}
 
-  .hole-one {
+.hole-one {
     grid-row-start: 2;
     grid-column-start: 1;
-  }
+}
 
-  .hole-two {
+.hole-two {
     grid-row-start: 3;
     grid-column-start: 1;
-  }
+}
 
-  .hole-three {
+.hole-three {
     grid-row-start: 4;
     grid-column-start: 1;
-  }
+}
 
-  .hole-four {
+.hole-four {
     grid-row-start: 5;
     grid-column-start: 1;
-  }
+}
 
-  .hole-five {
+.hole-five {
     grid-row-start: 6;
     grid-column-start: 1;
-  }
+}
 
-  .hole-six {
+.hole-six {
     grid-row-start: 7;
     grid-column-start: 1;
-  }
+}
 
-  .hole-seven {
+.hole-seven {
     grid-row-start: 8;
     grid-column-start: 1;
-  }
+}
 
-  .hole-eight {
+.hole-eight {
     grid-row-start: 9;
     grid-column-start: 1;
-  }
+}
 
-  .hole-nine {
+.hole-nine {
     grid-row-start: 10;
     grid-column-start: 1;
-  }
+}
 
-  .hole-ten {
+.hole-ten {
     grid-row-start: 11;
     grid-column-start: 1;
-  }
+}
 
-  .hole-eleven {
+.hole-eleven {
     grid-row-start: 12;
     grid-column-start: 1;
-  }
+}
 
-  .hole-twelve {
+.hole-twelve {
     grid-row-start: 13;
     grid-column-start: 1;
-  }
+}
 
-  .hole-thirteen {
+.hole-thirteen {
     grid-row-start: 14;
     grid-column-start: 1;
-  }
+}
 
-  .hole-fourteen {
+.hole-fourteen {
     grid-row-start: 15;
     grid-column-start: 1;
-  }
+}
 
-  .hole-fifteen {
+.hole-fifteen {
     grid-row-start: 16;
     grid-column-start: 1;
-  }
+}
 
-  .total {
+.total {
     grid-row-start: 17;
     grid-column-start: 1;
-  }
+}
 
-  .hole-num {
-    padding: 5px;   
+.hole-num {
+    padding: 10px;   
     align-self: center;
-  }
+}
+
+input {
+    background-color: transparent;
+    box-shadow: none;
+    border-style: none;
+    font-family: "Andale Mono", 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 3ch;
+}
