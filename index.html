@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main-styles.css">
+    <script type="text/javascript" src="./main.js"></script>
     <title>Haunted Manor Scorecard</title>
 </head>
 <body>
@@ -83,276 +84,293 @@
             Total
         </div>
         <div class="input-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
         <div class="input-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
         <div class="input-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
         <div class="input-seven grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-eight grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-nine grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-ten grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
         <div class="input-eleven grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
         <div class="input-twelve grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
         <div class="input-thirteen grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-fourteen grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-fifteen grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-sixteen grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
         <div class="input-seventeen grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
         <div class="input-eighteen grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
         <div class="input-nineteen grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-twenty grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-twenty-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-twenty-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
         <div class="input-twenty-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
         <div class="input-twenty-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
         <div class="input-twenty-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-twenty-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-twenty-seven grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-twenty-eight grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
         <div class="input-twenty-nine grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
         <div class="input-thirty grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
         <div class="input-thirty-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-thirty-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-thirty-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-thirty-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
         <div class="input-thirty-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
         <div class="input-thirty-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
         <div class="input-thirty-seven grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-thirty-eight grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-thirty-nine grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-fourty grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
         <div class="input-fourty-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
         <div class="input-fourty-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
         <div class="input-fourty-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-fourty-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-fourty-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-fourty-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
         <div class="input-fourty-seven grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
         <div class="input-fourty-eight grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
         <div class="input-fourty-nine grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
         <div class="input-fifty grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
         <div class="input-fifty-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
         <div class="input-fifty-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
-        <div class="input-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-fifty-three grid-item">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
-        <div class="input-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-fifty-four grid-item">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
-        <div class="input-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-fifty-five grid-item">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
-        <div class="input-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-fifty-six grid-item">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
-        <div class="input-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-fifty-seven grid-item">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
-        <div class="input-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-fifty-eight grid-item">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
-        <div class="input-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-fifty-nine grid-item">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
-        <div class="input-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty grid-item">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
-        <div class="input-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-one grid-item">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
-        <div class="input-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-two grid-item">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
-        <div class="input-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-three grid-item">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
-        <div class="input-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-four grid-item">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
-        <div class="input-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-five grid-item">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
-        <div class="input-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-six grid-item">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
-        <div class="input-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-seven grid-item">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
-        <div class="input-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-eight grid-item">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
-        <div class="input-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-sixty-nine grid-item">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
-        <div class="input-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy grid-item">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
-        <div class="input-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-one grid-item">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
-        <div class="input-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-two grid-item">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
-        <div class="input-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-three grid-item">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
-        <div class="input-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-four grid-item">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
-        <div class="input-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-five grid-item">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
-        <div class="input-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-six grid-item">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
-        <div class="input-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-seven grid-item">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
-        <div class="input-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-eight grid-item">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
-        <div class="input-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-seventy-nine grid-item">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
-        <div class="input-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty grid-item">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
-        <div class="input-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-one grid-item">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
-        <div class="input-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-two grid-item">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
-        <div class="input-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-three grid-item">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
-        <div class="input-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-four grid-item">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
-        <div class="input-one grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-five grid-item">
+            <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
-        <div class="input-two grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-six grid-item">
+            <input type="number" value="" class="score-two" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnTwo()">
         </div>
-        <div class="input-three grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-seven grid-item">
+            <input type="number" value="" class="score-three" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnThree()">
         </div>
-        <div class="input-four grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-eight grid-item">
+            <input type="number" value="" class="score-four" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFour()">
         </div>
-        <div class="input-five grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-eighty-nine grid-item">
+            <input type="number" value="" class="score-five" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnFive()">
         </div>
-        <div class="input-six grid-item">
-            <input type="number" placeholder="__" pattern="[0-9]+">
+        <div class="input-ninety grid-item">
+            <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
+        </div>
+        <div class="grid-item">
+            <input type="number" id="result-one" value="">
+        </div>
+        <div class="grid-item">
+            <input type="number" id="result-two" value="">
+        </div>
+        <div class="grid-item">
+            <input type="number" id="result-three" value="">
+        </div>
+        <div class="grid-item">
+            <input type="number" id="result-four" value="">
+        </div>
+        <div class="grid-item">
+            <input type="number" id="result-five" value="">
+        </div>
+        <div class="grid-item">
+            <input type="number" id="result-six" value="">
         </div>
     </div>
-
 </body>
 </html>
