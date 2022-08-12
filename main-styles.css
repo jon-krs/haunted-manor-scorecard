@@ -38,17 +38,15 @@ body {
 }
 
 .grid-item {
-    text-overflow: ellipsis;
+    text-overflow: clip;
     white-space: nowrap;
     overflow: hidden;
-    max-width: 15ch;
     padding: 10px;
 }
 
 .neon-text {
     animation: flicker 1.5s infinite alternate;
     color: #fff;
-    padding: 10px;
 }
 
 @keyframes flicker {
@@ -166,4 +164,62 @@ input {
     white-space: nowrap;
     overflow: hidden;
     max-width: 3ch;
+}
+
+.names {
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: none;
+    border-style: none;
+    font-family: "Andale Mono", 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 8ch;
+    text-shadow:
+        0 0 1px rgb(0, 119, 255),
+        0 0 3px rgb(0, 119, 255),
+        0 0 5px rgb(0, 119, 255),
+        0 0 7px rgb(0, 119, 255);
+}
+
+.names::placeholder, .names-flicker::placeholder {
+    color: gray;
+    text-shadow: none;
+}
+
+.names-flicker {
+    animation: flicker-two 1.5s infinite alternate;
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: none;
+    border-style: none;
+    font-family: "Andale Mono", 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 8ch;
+}
+
+@keyframes flicker-two {
+    0%, 12%, 18%, 24%, 46%, 54%, 100% {
+      text-shadow:
+      0 0 1px rgb(0, 119, 255),
+      0 0 3px rgb(0, 119, 255),
+      0 0 5px rgb(0, 119, 255),
+      0 0 7px rgb(0, 119, 255);
+    }
+    16%, 20%, 51% {       
+      text-shadow: none;
+    }
 }
