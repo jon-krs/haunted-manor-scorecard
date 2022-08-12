@@ -21,7 +21,7 @@ body {
     height: 100%;
     row-gap: 5px;
     overflow: scroll;
-    font-family: "Andale Mono", 'Courier New', Courier, monospace;
+    font-family: "Andale Mono", "Droid Sans Mono", "Menlo", 'Courier New', Courier, monospace;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -155,7 +155,7 @@ input {
     background-color: transparent;
     box-shadow: none;
     border-style: none;
-    font-family: "Andale Mono", 'Courier New', Courier, monospace;
+    font-family: "Andale Mono", "Droid Sans Mono", "Menlo", 'Courier New', Courier, monospace;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -172,7 +172,7 @@ input {
     width: 100%;
     box-shadow: none;
     border-style: none;
-    font-family: "Andale Mono", 'Courier New', Courier, monospace;
+    font-family: "Andale Mono", "Droid Sans Mono", "Menlo", 'Courier New', Courier, monospace;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -200,7 +200,7 @@ input {
     width: 100%;
     box-shadow: none;
     border-style: none;
-    font-family: "Andale Mono", 'Courier New', Courier, monospace;
+    font-family: "Andale Mono", "Droid Sans Mono", "Menlo", 'Courier New', Courier, monospace;
     text-transform: uppercase;
     color: #fff;
     text-align: center;
