@@ -172,6 +172,13 @@ input {
     max-width: 3ch;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
 .names {
     background-color: transparent;
     box-sizing: border-box;
