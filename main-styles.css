@@ -185,7 +185,6 @@ select:-webkit-autofill:focus {
     box-sizing: border-box;
     width: 100%;
     box-shadow: none;
-    -webkit-text-fill-color: #fff;
     -webkit-box-shadow: none;
     transition: background-color 5000s ease-in-out 0s;
     border: none;
@@ -203,6 +202,7 @@ select:-webkit-autofill:focus {
         0 0 1px rgb(0, 119, 255),
         0 0 3px rgb(0, 119, 255),
         0 0 5px rgb(0, 119, 255);
+    -webkit-text-fill-color: #fff;
 }
 
 .names {
