@@ -1,3 +1,5 @@
+$('input').attr('autocomplete','off');
+
 function sumColumnOne() {
     const holeScore = document.getElementsByClassName("score-one");
     var columnTotal = 0;
