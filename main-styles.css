@@ -52,6 +52,7 @@ body {
     color: #fff;
 }
 
+/* Text flickering animation No.1. for 'Holes' column. */
 @keyframes flicker {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {
       text-shadow:
@@ -66,6 +67,7 @@ body {
     }
 }
 
+/* Specific grid location allocated for 'Holes', hole numbers, and 'Total'. */
 .hole-one {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -152,6 +154,7 @@ body {
 }
 
 input {
+    filter: none;
     background-color: transparent;
     box-shadow: none;
     border-style: none;
@@ -166,6 +169,7 @@ input {
     max-width: 3ch;
 }
 
+/* Removes autofill in Chrome, Safari, and *maybe* Firefox */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus,
@@ -175,6 +179,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
+    filter: none;
     background-color: transparent;
     box-sizing: border-box;
     width: 100%;
@@ -200,6 +205,7 @@ select:-webkit-autofill:focus {
 }
 
 .field {
+    filter: none;
     background-color: transparent;
     box-sizing: border-box;
     width: 100%;
@@ -221,6 +227,7 @@ select:-webkit-autofill:focus {
 }
 
 .field::placeholder, .field-flicker::placeholder {
+    filter: none;
     color: gray;
     text-shadow: none;
 }
@@ -243,6 +250,7 @@ select:-webkit-autofill:focus {
     max-width: 8ch;
 }
 
+/* Text flickering animation No.2 for 'Names' input fields. */
 @keyframes flicker-two {
     0%, 12%, 18%, 24%, 46%, 54%, 100% {
       text-shadow:
@@ -255,8 +263,14 @@ select:-webkit-autofill:focus {
     }
 }
 
+/* Removes spin button on hole score inputs for Chrome, Safari */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+/* Removes spin button on hole score inputs for Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }

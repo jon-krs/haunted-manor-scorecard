@@ -1,5 +1,9 @@
+// Code to disable autocomplete as it breaks styling effects on Name row.
 $('input').attr('autocomplete','off');
 
+// 6 functions below to sum player scores in realtime for all columns. 
+// Result sum is displayed in 'Total' row. 
+// Try/catch blocks are to allow summation despite empty values on some holes.
 function sumColumnOne() {
     const holeScore = document.getElementsByClassName("score-one");
     var columnTotal = 0;

@@ -19,9 +19,13 @@
     -->
     
     <div class="content">
+        <!-- Holes label for hole number column -->
         <div class="neon-text hole-num grid-item">
             Holes
         </div>
+
+        <!-- 6 input forms for player names. Class names, spell check, and autocomplete 
+             are disabled to prevent styling issues -->
         <div class="field-container">
             <form autocomplete="false" spellcheck="false">
                 <input type="text" class="field-flicker" placeholder="Name" autocomplete="do-not-autofill" spellcheck="false">
@@ -52,6 +56,8 @@
                 <input type="text" class="field-flicker" placeholder="Name" autocomplete="do-not-autofill" spellcheck="false">
             </form>        
         </div>
+
+        <!-- 15 holes, all on left side at beginning of rows, and 'Total' row for realtime score calculation -->
         <div class="hole-one hole-num grid-item">
             1
         </div>
@@ -100,6 +106,8 @@
         <div class="total neon-text hole-num grid-item">
             Total
         </div>
+
+        <!-- Score input items 1 - 90, call sumColumnOne() onkeyup to calc. score -->
         <div class="input-one grid-item">
             <input type="number" value="" class="score-one" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnOne()">
         </div>
@@ -370,6 +378,8 @@
         <div class="input-ninety grid-item">
             <input type="number" value="" class="score-six" placeholder="__" pattern="[0-9]+" onkeyup="sumColumnSix()">
         </div>
+
+        <!-- Player result row, result calculated by sumColumnOne() onkeyup for all score value inputs -->
         <div class="grid-item">
             <input type="number" id="result-one" value="">
         </div>
