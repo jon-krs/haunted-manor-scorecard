@@ -52,6 +52,30 @@ body {
     color: #fff;
 }
 
+#delete-container {
+    display: flex;
+    justify-content: center;
+    margin-top: .75rem;
+}
+
+button {
+    font-family: "Andale Mono", "Times", "Baskerville", "Palatino", "Droid Sans Mono", "Menlo", 'Courier New', Courier, monospace;
+    font-size: 8px;
+    height: 1.75rem;
+    width: 7.5rem;
+    background-color: none;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 9px #0fa,
+        0 0 12px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa;
+}
+
 /* Text flickering animation No.1. for 'Holes' column. */
 @keyframes flicker {
     0%, 18%, 22%, 25%, 53%, 57%, 100% {

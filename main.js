@@ -153,3 +153,9 @@ function itSavedValues(arr, col) {
         }
     }
 }
+
+// Clears localStorage and reloads page.
+function deleteScores() {
+    localStorage.clear();
+    location.reload();
+}
