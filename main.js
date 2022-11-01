@@ -1,7 +1,7 @@
 // Code to disable autocomplete as it breaks styling effects on Name row.
 $('input').attr('autocomplete','off');
 
-// Initialize global arrays to store input values by column to sessionStorage.
+// Initialize global arrays to store input values by column to localStorage.
 let colOneArr = new Array(17).fill('');
 let colTwoArr = new Array(17).fill('');
 let colThreeArr = new Array(17).fill('');
@@ -9,7 +9,7 @@ let colFourArr = new Array(17).fill('');
 let colFiveArr = new Array(17).fill('');
 let colSixArr = new Array(17).fill('');
 
-// Checks if sessionStorage has saved values, populates if so.
+// Checks if localStorage has saved values, populates if so.
 window.onload = function() {
     getSavedValues();
 }
@@ -18,7 +18,7 @@ window.onload = function() {
 // Parameters: colNum - the player's column number.
 //             colRow - the row number for easy storage.
 //             id - the input's HTML id.
-// Calls functions to sum column score and save input value in sessionStorage.
+// Calls functions to sum column score and save input value in localStorage.
 function valInput(colNum, colRow, id) {
     if (colRow != 0) {
         sumTotal(colNum);
@@ -29,7 +29,7 @@ function valInput(colNum, colRow, id) {
 // Calculates player's score in realtime for column and displays it to
 // player's 'Total' cell at bottom of scorecard.
 // Parameters: colNum - the player's column number.
-// Calls function to save score in sessionStorage.
+// Calls function to save score in localStorage.
 function sumTotal(colNum) {
     let scoreNum;
     let resultNum;
@@ -75,75 +75,75 @@ function sumTotal(colNum) {
     saveValue(colNum, 16, resultNum);
 }
 
-// Saves input value in related array then saves array as JSON obj in sessionStorage.
+// Saves input value in related array then saves array as JSON obj in localStorage.
 // Parameters: colNum - the player's column number.
 //             colRow - the row number for easy storage.
 //             id - the input's HTML id.
 function saveValue(colNum, colRow, id) {
     if (colNum === 1) {
         colOneArr[colRow] = document.getElementById(id).value;
-        sessionStorage.setItem('colOne', JSON.stringify(colOneArr));
+        localStorage.setItem('colOne', JSON.stringify(colOneArr));
     }
     else if (colNum === 2) {
         colTwoArr[colRow] = document.getElementById(id).value;
-        sessionStorage.setItem('colTwo', JSON.stringify(colTwoArr));
+        localStorage.setItem('colTwo', JSON.stringify(colTwoArr));
     }
     else if (colNum === 3) {
         colThreeArr[colRow] = document.getElementById(id).value;
-        sessionStorage.setItem('colThree', JSON.stringify(colThreeArr));
+        localStorage.setItem('colThree', JSON.stringify(colThreeArr));
     }
     else if (colNum === 4) {
         colFourArr[colRow] = document.getElementById(id).value;
-        sessionStorage.setItem('colFour', JSON.stringify(colFourArr));
+        localStorage.setItem('colFour', JSON.stringify(colFourArr));
     }
     else if (colNum === 5) {
         colFiveArr[colRow] = document.getElementById(id).value;
-        sessionStorage.setItem('colFive', JSON.stringify(colFiveArr));
+        localStorage.setItem('colFive', JSON.stringify(colFiveArr));
     }
     else {
         colSixArr[colRow] = document.getElementById(id).value;
-        sessionStorage.setItem('colSix', JSON.stringify(colSixArr));
+        localStorage.setItem('colSix', JSON.stringify(colSixArr));
     }
 }
 
-// Gets saved values from sessionStorage. Saves previous values from
-// sessionStorage into working global arrays.
+// Gets saved values from localStorage. Saves previous values from
+// localStorage into working global arrays.
 // Parameters: none.
 function getSavedValues() {
-    if (sessionStorage.getItem('colOne') !== null) {
-        const storedValuesOne = JSON.parse(sessionStorage.getItem('colOne'));
+    if (localStorage.getItem('colOne') !== null) {
+        const storedValuesOne = JSON.parse(localStorage.getItem('colOne'));
         itSavedValues(storedValuesOne, 'score-one');
         colOneArr = storedValuesOne;
     }
-    if (sessionStorage.getItem('colTwo') !== null) {
-        const storedValuesTwo = JSON.parse(sessionStorage.getItem('colTwo'));
+    if (localStorage.getItem('colTwo') !== null) {
+        const storedValuesTwo = JSON.parse(localStorage.getItem('colTwo'));
         itSavedValues(storedValuesTwo, 'score-two');
         colTwoArr = storedValuesTwo;
     }
-    if (sessionStorage.getItem('colThree') !== null) {
-        const storedValuesThree = JSON.parse(sessionStorage.getItem('colThree'));
+    if (localStorage.getItem('colThree') !== null) {
+        const storedValuesThree = JSON.parse(localStorage.getItem('colThree'));
         itSavedValues(storedValuesThree, 'score-three');
         colThreeArr = storedValuesThree;
     }
-    if (sessionStorage.getItem('colFour') !== null) {
-        const storedValuesFour = JSON.parse(sessionStorage.getItem('colFour'));
+    if (localStorage.getItem('colFour') !== null) {
+        const storedValuesFour = JSON.parse(localStorage.getItem('colFour'));
         itSavedValues(storedValuesFour, 'score-four');
         colFourArr = storedValuesFour;
     }
-    if (sessionStorage.getItem('colFive') !== null) {
-        const storedValuesFive = JSON.parse(sessionStorage.getItem('colFive'));
+    if (localStorage.getItem('colFive') !== null) {
+        const storedValuesFive = JSON.parse(localStorage.getItem('colFive'));
         itSavedValues(storedValuesFive, 'score-five');
         colFiveArr = storedValuesFive;
     }
-    if (sessionStorage.getItem('colSix') !== null) {
-        const storedValuesSix = JSON.parse(sessionStorage.getItem('colSix'));
+    if (localStorage.getItem('colSix') !== null) {
+        const storedValuesSix = JSON.parse(localStorage.getItem('colSix'));
         itSavedValues(storedValuesSix, 'score-six');
         colSixArr = storedValuesSix;
     }
 }
 
 // Populates scorecard with saved values.
-// Parameters: arr - the retrieved array from sessionStorage.
+// Parameters: arr - the retrieved array from localStorage.
 //             col - the column related class name.
 function itSavedValues(arr, col) {
     const colArr = document.getElementsByClassName(col);
