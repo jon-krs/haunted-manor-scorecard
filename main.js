@@ -2,12 +2,12 @@
 $('input').attr('autocomplete','off');
 
 // Initialize global arrays to store input values by column to localStorage.
-let colOneArr = new Array(17).fill('');
-let colTwoArr = new Array(17).fill('');
-let colThreeArr = new Array(17).fill('');
-let colFourArr = new Array(17).fill('');
-let colFiveArr = new Array(17).fill('');
-let colSixArr = new Array(17).fill('');
+let colOneArr = new Array(20).fill('');
+let colTwoArr = new Array(20).fill('');
+let colThreeArr = new Array(20).fill('');
+let colFourArr = new Array(20).fill('');
+let colFiveArr = new Array(20).fill('');
+let colSixArr = new Array(20).fill('');
 
 // Checks if localStorage has saved values, populates if so.
 window.onload = function() {
@@ -61,7 +61,7 @@ function sumTotal(colNum) {
 
     const holeScore = document.getElementsByClassName(scoreNum);
     let columnTotal = 0;
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 19; i++) {
         try {
             if (!isNaN(parseInt(holeScore[i].value))) {
                 columnTotal += parseInt(holeScore[i].value);
@@ -72,7 +72,7 @@ function sumTotal(colNum) {
         }
     }
     document.getElementById(resultNum).value = columnTotal;
-    saveValue(colNum, 16, resultNum);
+    saveValue(colNum, 19, resultNum);
 }
 
 // Saves input value in related array then saves array as JSON obj in localStorage.
@@ -147,7 +147,7 @@ function getSavedValues() {
 //             col - the column related class name.
 function itSavedValues(arr, col) {
     const colArr = document.getElementsByClassName(col);
-    for (let i = 0; i < 17; i++) {
+    for (let i = 0; i < 20; i++) {
         if (arr[i] !== '') {
             colArr[i].value = arr[i];
         }
@@ -156,6 +156,9 @@ function itSavedValues(arr, col) {
 
 // Clears localStorage and reloads page.
 function deleteScores() {
-    localStorage.clear();
-    location.reload();
+    const confirmDelete = confirm('Are you sure you want to delete all scores?');
+    if (confirmDelete) {
+        localStorage.clear();
+        location.reload();
+    }
 }

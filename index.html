@@ -57,7 +57,7 @@
             </form>        
         </div>
 
-        <!-- 15 holes, all on left side at beginning of rows, and 'Total' row for realtime score calculation -->
+        <!-- 17 holes, all on left side at beginning of rows, and 'Total' row for realtime score calculation -->
         <div class="hole-one hole-num grid-item">
             1
         </div>
@@ -103,11 +103,20 @@
         <div class="hole-fifteen hole-num grid-item">
             15
         </div>
+        <div class="neon-text hole-sixteen hole-num grid-item">
+            16
+        </div>
+        <div class="hole-seventeen hole-num grid-item">
+            17
+        </div>
+        <div class="hole-eightteen hole-num grid-item">
+            18
+        </div>
         <div class="total neon-text hole-num grid-item">
             Total
         </div>
 
-        <!-- Score input items 1 - 90, call sumColumnOne() onkeyup to calc. score -->
+        <!-- Score input items 1 - 96, call sumColumnOne() onkeyup to calc. score -->
         <div class="grid-item">
             <input type="number" value="" class="score-one" id="input-one" placeholder="__" pattern="[0-9]+" onkeyup="valInput(1, 1, this.id)">
         </div>
@@ -377,6 +386,60 @@
         </div>
         <div class="grid-item">
             <input type="number" value="" class="score-six" id="input-ninety" placeholder="__" pattern="[0-9]+" onkeyup="valInput(6, 15, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-one" id="input-ninety-one" placeholder="__" pattern="[0-9]+" onkeyup="valInput(1, 16, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-two" id="input-ninety-two" placeholder="__" pattern="[0-9]+" onkeyup="valInput(2, 16, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-three" id="input-ninety-three" placeholder="__" pattern="[0-9]+" onkeyup="valInput(3, 16, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-four" id="input-ninety-four" placeholder="__" pattern="[0-9]+" onkeyup="valInput(4, 16, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-five" id="input-ninety-five" placeholder="__" pattern="[0-9]+" onkeyup="valInput(5, 16, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-six" id="input-ninety-six" placeholder="__" pattern="[0-9]+" onkeyup="valInput(6, 16, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-one" id="input-ninety-seven" placeholder="__" pattern="[0-9]+" onkeyup="valInput(1, 17, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-two" id="input-ninety-eight" placeholder="__" pattern="[0-9]+" onkeyup="valInput(2, 17, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-three" id="input-ninety-nine" placeholder="__" pattern="[0-9]+" onkeyup="valInput(3, 17, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-four" id="input-one-hundred" placeholder="__" pattern="[0-9]+" onkeyup="valInput(4, 17, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-five" id="input-one-hundred-one" placeholder="__" pattern="[0-9]+" onkeyup="valInput(5, 17, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-six" id="input-one-hundred-two" placeholder="__" pattern="[0-9]+" onkeyup="valInput(6, 17, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-one" id="input-one-hundred-three" placeholder="__" pattern="[0-9]+" onkeyup="valInput(1, 18, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-two" id="input-one-hundred-four" placeholder="__" pattern="[0-9]+" onkeyup="valInput(2, 18, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-three" id="input-one-hundred-five" placeholder="__" pattern="[0-9]+" onkeyup="valInput(3, 18, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-four" id="input-one-hundred-six" placeholder="__" pattern="[0-9]+" onkeyup="valInput(4, 18, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-five" id="input-one-hundred-seven" placeholder="__" pattern="[0-9]+" onkeyup="valInput(5, 18, this.id)">
+        </div>
+        <div class="grid-item">
+            <input type="number" value="" class="score-six" id="input-one-hundred-eight" placeholder="__" pattern="[0-9]+" onkeyup="valInput(6, 18, this.id)">
         </div>
 
         <!-- Player result row, result calculated by sumColumnOne() onkeyup for all score value inputs -->
