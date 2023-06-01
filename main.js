@@ -155,10 +155,46 @@ function itSavedValues(arr, col) {
 }
 
 // Clears localStorage and reloads page.
+function fakeConfirm(message, callback) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+
+    const modalOverlay = document.createElement('div');
+    modalOverlay.classList.add('modal-overlay');
+
+    const modalContent = document.createElement('div');
+    modalContent.classList.add('modal-content');
+
+    const confirmText = document.createElement('p');
+    confirmText.textContent = message;
+
+    const confirmButton = document.createElement('button');
+    confirmButton.textContent = 'OK';
+    confirmButton.addEventListener('click', function () {
+        document.body.removeChild(modal);
+        callback(true);
+    });
+
+    const cancelButton = document.createElement('button');
+    cancelButton.textContent = 'CANCEL';
+    cancelButton.addEventListener('click', function () {
+        document.body.removeChild(modal);
+        callback(false);
+    });
+
+    modalContent.appendChild(confirmText);
+    modalContent.appendChild(confirmButton);
+    modalContent.appendChild(cancelButton);
+    modal.appendChild(modalOverlay);
+    modal.appendChild(modalContent);
+    document.body.appendChild(modal);
+}
+
 function deleteScores() {
-    const confirmDelete = confirm('Are you sure you want to delete all scores?');
-    if (confirmDelete) {
-        localStorage.clear();
-        location.reload();
-    }
+    fakeConfirm('Are you sure you want to delete all scores?', function (confirmDelete) {
+        if (confirmDelete) {
+            localStorage.clear();
+            location.reload();
+        }
+    });
 }
